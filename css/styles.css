@@ -64,6 +64,12 @@ body {
   text-decoration: none;
 }
 
+.picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* site-nav */
 .main-nav {
   align-items: center;
@@ -136,6 +142,10 @@ body {
 .herro-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 200px; */
+  width: 696px;
 
   font-weight: 900;
   color: var(--white);
@@ -147,6 +157,7 @@ body {
 
 /* button */
 .button {
+  /* margin-bottom: 210px; */
   display: inline-block;
   min-width: 136px;
   padding: 10px 32px;
@@ -179,6 +190,17 @@ body {
 }
 
 /* featyre */
+.featyre {
+  display: flex;
+}
+
+.featyre .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.container .featyre {
+  padding-top: 94px;
+}
 .featyre .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -199,8 +221,37 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+/* What the company does */
+.doing {
+  display: flex;
+}
+
+/* .doing .picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+.doing .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* team */
+.section .container {
+  /* background-color: #f5f4fa; */
+  padding-top: 94px;
+}
+/* .section .container:not(:last-child) {
+  margin-right: 30px;
+} */
+
+.team {
+  display: flex;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team .name {
   margin-top: 0;
   margin-bottom: 10px;
